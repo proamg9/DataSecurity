@@ -17,7 +17,7 @@ app.use(morgan('dev'));
 require('./routes')(app);
 
 
-app.get('*', (req, res) => res.status(200).send({
+app.get('*', (req, res) => res.status(404).send({
   message: 'Welcome........',
 }));
 
